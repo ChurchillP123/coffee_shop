@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" type = "text/css" href="./style.css">
+</head>
+<body>
+    <div id="grid-container">
+        <div id="nav" class="flex-box">
+            <img id="coffee-shop" src="https://images.unsplash.com/photo-1459755486867-b55449bb39ff?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGNvZmZlZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="hot steaming coffee">
+            <header id="title">Perry's Coffee Shop</header>
+        </div>
+        <div id="main" class="flex-box">
+            <form action="#" id="shop">
+                <div class="item1">
+                    <img id="bagel-pic" class="items" src="https://images.unsplash.com/photo-1585445490387-f47934b73b54?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmFnZWx8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="three warm bagels">
+                    <label for="bagels">Bagels: $3.00</label>
+                    <input type="number" id="bagels" name="bagels" min="1" max="10" required><br><br>
+                </div>
+                <div class="item2">
+                    <img id="tea-pic" class="items" src="https://images.unsplash.com/photo-1597318109735-d3612887d1ad?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHRlYXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="hot tea">
+                    <label for="tea">Tea: $7.00</label>
+                    <input type="number" id="tea" name="tea" min="1" max="10" required><br><br>
+                </div>
+                <div class="item3">
+                    <img id="coffee-pic" class="items" src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGNvZmZlZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="steaming coffee">
+                    <label for="coffee">Coffee: $11.00</label>
+                    <input type="number" id="coffee" name="coffee" min="1" max="10" required><br><br>
+                </div>
+                
+                
+                
+                <button id="submit">Submit</button><br><br>
+                <input type="number" id="total" name="total">
+            </form>
+        </div>
+        <div id="footer" class="flex-box">
+            <p>Email: Perry'sCoffeeShop@hotmail.com</p>
+            <p>Url: http://127.0.0.1:5500/index.html</p>
+            <p>Address: 1234 Northwest Perry Dr., Coffeeburg, TX 78890</p>
+
+        </div>
+    </div>
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>

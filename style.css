@@ -1,0 +1,117 @@
+/* Common Breakpoints
+Mobile: 360 x 720
+Tablet: 768 x 1024
+Laptop: 1366 x 768
+High-res laptop or desktop: 1920 x 1080 */
+
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+#grid-container {
+    display: grid;
+    grid-template-rows: 80px 0.5fr 125px;
+    grid-template-columns: 1fr;
+}
+
+#nav {
+    background-color: black;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#coffee-shop {
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#title {
+    color: white;
+    font-family: 'Monoton', cursive;
+    font-size: 25px;
+    align-self: center;
+    margin-left: 10px;
+
+}
+
+#main {
+    background-color: blue;
+}
+
+#shop {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.item1, .item2, .item3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px;
+}
+
+label {
+    align-self: center;
+}
+
+input {
+    width: 10%;
+    height: 50%;
+    align-self: center;
+}
+
+
+
+.items {
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+}
+
+#submit {
+    width: 50%;
+    align-self: flex-end;
+    margin-top: 10px;
+    
+}
+
+#total {
+    width: 20%;
+    align-self: flex-end;
+}
+#footer {
+    background-color: yellow;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    #grid-container {
+        grid-template-rows: 0.5fr 0.5fr 125px;
+    }
+    #title {
+        font-size: 45px;
+    }
+    #submit {
+        width: 15%;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    
+    #grid-container {
+        grid-template-rows: 300px 0.5fr 125px;
+    }
+    
+    #coffee-shop {
+        width: 35%;
+        height: 100%;
+        object-fit: contain;
+    }
+    
+}
+
